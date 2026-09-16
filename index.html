@@ -4,6 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>تمرین‌های جاوااسکریپت</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -27,7 +29,7 @@
           <span class="panel-title" id="current-exercise-title">تمرینی انتخاب نشده</span>
           <button id="run-btn" class="run-btn" disabled>اجرا</button>
         </div>
-        <pre class="code-view"><code id="code-view">یک تمرین را از فهرست کناری انتخاب کنید.</code></pre>
+        <pre class="code-view"><code id="code-view" aria-label="کد تمرین">یک تمرین را از فهرست کناری انتخاب کنید.</code></pre>
       </div>
 
       <div class="output-panel">
@@ -35,8 +37,8 @@
           <span class="panel-title">خروجی</span>
           <button id="clear-output-btn" class="clear-btn">پاک کردن</button>
         </div>
-        <div class="output-view" id="output-view">
-          <p class="output-placeholder">خروجی console.log اینجا نمایش داده می‌شود.</p>
+        <div class="output-view" id="output-view" role="log" aria-live="polite" aria-label="خروجی برنامه">
+          <p class="output-placeholder" aria-hidden="true">خروجی console.log اینجا نمایش داده می‌شود.</p>
         </div>
       </div>
     </section>
