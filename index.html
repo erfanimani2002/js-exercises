@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>تمرین‌های جاوااسکریپت</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <h1>تمرین‌های جاوااسکریپت</h1>
+    <div class="person-switch" role="tablist">
+      <button class="person-btn active" data-person="helia" role="tab" aria-selected="true">هلیا</button>
+      <button class="person-btn" data-person="erfan" role="tab" aria-selected="false">عرفان</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <nav class="exercise-list" id="exercise-list" aria-label="لیست تمرین‌ها">
+      <p class="hint">در حال بارگذاری...</p>
+    </nav>
+
+    <section class="workspace">
+      <div class="code-panel">
+        <div class="panel-head">
+          <span class="panel-title" id="current-exercise-title">تمرینی انتخاب نشده</span>
+          <button id="run-btn" class="run-btn" disabled>اجرا</button>
+        </div>
+        <pre class="code-view"><code id="code-view">یک تمرین را از فهرست کناری انتخاب کنید.</code></pre>
+      </div>
+
+      <div class="output-panel">
+        <div class="panel-head">
+          <span class="panel-title">خروجی</span>
+          <button id="clear-output-btn" class="clear-btn">پاک کردن</button>
+        </div>
+        <div class="output-view" id="output-view">
+          <p class="output-placeholder">خروجی console.log اینجا نمایش داده می‌شود.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
